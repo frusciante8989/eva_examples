@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     with eva.lock():
         while True:
-            passed, cam_string = readTcpIp(sock) # String format = ['start', 'pattern', 'x_mm', 'y_mm', 'angle', 'pass']:
+            passed, cam_string = read_tcp_ip(sock) # String format = ['start', 'pattern', 'x_mm', 'y_mm', 'angle', 'pass']:
 
             if passed is True and len(cam_string) == 5 and cam_string[0] is 'start':  # Successful string format
                 evaVision = EvaVision(eva, cam_string, joint_cal_zero, object_heights[cam_string[1]],
