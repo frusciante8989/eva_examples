@@ -64,7 +64,7 @@ def solve_ik_head_down(eva, guess, theta, xyz_absolute):
     return success_ik, joints_ik
 
 
-def _read_tcp_ip(sock, objects):
+def read_tcp_ip(sock, objects):
     """ This method reads and decodes the string sent from the camera """
     result = sock.recv(4000)
     string_read = result.decode('utf-8')
