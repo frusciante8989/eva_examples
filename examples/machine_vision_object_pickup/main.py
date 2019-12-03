@@ -4,9 +4,11 @@ from automata import Eva
 from evaUtilities import *
 from config.config_manager import load_use_case_config
 
-config = load_use_case_config()
 
 if __name__ == "__main__":
+    # Load config parameters
+    config = load_use_case_config()
+    
     # Connection to robot
     host = config['EVA']['comms']['host']
     token = config['EVA']['comms']['token']

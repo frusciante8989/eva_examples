@@ -3,8 +3,8 @@
 
 EVA:
   comms:
-    host: 'http://office.automata.tech:4242'
-    token: '5f2f295d-ffdc-46b3-850f-42313276ee14'
+    host: '0.0.0.0'
+    token: 'abcd1234'
   end_effector:
     payload: 0        # payload [kg]
     length: 0         # length of tool [m]
