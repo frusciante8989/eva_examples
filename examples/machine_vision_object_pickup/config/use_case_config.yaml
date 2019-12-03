@@ -1,0 +1,64 @@
+# Automata Technologies - Dr. Andrea Antonello, 2019
+# SETUP YAML file for Machine Vision Example - December 2019
+
+EVA:
+  comms:
+    host: 'http://office.automata.tech:4242'
+    token: '5f2f295d-ffdc-46b3-850f-42313276ee14'
+  end_effector:
+    payload: 0        # payload [kg]
+    length: 0         # length of tool [m]
+    offset:           # ee offset in ee-frame  [m]
+      - 0
+      - 0
+      - 0
+  hover_height: 0     # elevation of idle z axis wrt to the object [m]
+  surface_height: 0   # elevation of the pickup surface wrt to the robot [m, signed]
+
+TCP:
+  server: '0.0.0.0'
+  port: 0
+
+objects:
+  names:              # object names
+    - 'C'
+    - 'M'
+    - 'R'
+  heights:            # object thickness [m]
+    C: 0
+    M: 0
+    R: 0
+  weights:            # object weight [k]
+    C: 0
+    M: 0
+    R: 0
+
+waypoints:
+  joints_cal_zero:     # joints @ (0,0) of calibration board [rad]
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  joints_guess:        # joints guess for pickup/hover position [rad]
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  joints_home:        # joints for home position [rad]
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+  joints_drop:        # joints for drop position [rad]
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0
+    - 0

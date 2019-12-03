@@ -84,12 +84,13 @@ def read_tcp_ip(sock, objects):
                 passed = True
                 # Extract the best matching object from the string
                 camera_string = _extract_camera_serial(objects, select_obj, camera_string_raw)
+    # String format = ['start', 'object_name', float x_mm, float y_mm, float angle]
     return passed, camera_string
 
 
 def _extract_camera_serial(objects, index, camera_string_raw):
     """ This method extracts only the best matching object data from the entire string """
-    camera_string = ['', 0, 0, 0, 0, 0]
+    camera_string = ['', 0, 0, 0, 0]
     if index not in objects:
         print('Wrong object in the list')
     elif index is 'C':
