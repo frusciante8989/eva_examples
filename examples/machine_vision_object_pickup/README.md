@@ -47,7 +47,4 @@ In detailed, you will have to input:
 - objects characteristic (number, name, size) 
 - EVA configurations (home, guess, drop-off). 
 
-::: warning
 **NOTE: without changing these parameters, EVA will automatically set its home position in the upright configuration**
-:::
-
