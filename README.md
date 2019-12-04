@@ -6,7 +6,8 @@ Community Examples are written by the Automata developer community, please let u
 
 ## Included Examples
 
-- [Machine Vision Example](examples/machine_vision/): interface a machine vision camera with the Eva Python SDK for dynamically moving Eva to a object detected by the camera.
+- [Machine Vision With Object Pickup](examples/machine_vision_object_pickup/): shows how to interface a camera (Datalogic T47) with the Eva Python SDK for dynamically moving Eva to an object detected by the camera and picking it up.
+- [Machine Vision](examples/machine_vision/): interface a machine vision camera with the Eva Python SDK for dynamically moving Eva to a object detected by the camera.
 
 ## Community Examples
 
