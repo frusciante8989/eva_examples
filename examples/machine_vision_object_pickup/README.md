@@ -22,22 +22,22 @@ Requirements to run this script as is:
 
 ## Project description
 
-**main.py**
+__[main.py](main.py)__
 
 This file is the main script and contains the logic to connect to Eva and to communicate with the camera. This will perform the pick and place task, as a function of the objects sensed by the camera. 
 
 You can use this file to modify the toolpath settings (speed, additional waypoints, IOs, etc).
 
-**evaUtilities.py**
+__[evaUtilities.py](evaUtilities.py)__
 
 This file contains the auxiliary functions needed by the **main.py** script (frame of reference handling, angle and quaternion conversion, inverse kinematics, string reading, string parsing). You should not changed this file.
 
 
-**config/config_manager.py**
+__[config/config_manager.py](config/config_manager.py)__
 
 This file loads the YAML parameter file. You should not changed this file.
 
-**config/use_case_config.yaml**
+__[config/use_case_config.yaml](config/use_case_config.yaml)__
 
 This YAML file contains the parameters needed for the simulation, which are initialized to zero by default. 
 
@@ -47,5 +47,7 @@ In detailed, you will have to input:
 - objects characteristic (number, name, size) 
 - EVA configurations (home, guess, drop-off). 
 
-**<span style="color:red"> NOTE: without changing these parameters, EVA will automatically set its home position in the upright configuration </span>**
+::: warning
+**NOTE: without changing these parameters, EVA will automatically set its home position in the upright configuration**
+:::
 
