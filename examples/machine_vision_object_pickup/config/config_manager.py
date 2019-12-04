@@ -1,4 +1,3 @@
-# Automata Technologies - Dr. Andrea Antonello, 2019
 import os
 import yaml
 from pathlib import Path

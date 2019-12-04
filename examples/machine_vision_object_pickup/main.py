@@ -1,4 +1,3 @@
-# Automata Technologies - Dr. Andrea Antonello, 2019
 import socket
 from automata import Eva
 from evaUtilities import *

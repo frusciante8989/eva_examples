@@ -1,4 +1,3 @@
-# Automata Technologies - Andrea Antonello, 2019
 import math
 import operator
 import numpy as np
