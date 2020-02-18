@@ -1,4 +1,4 @@
-# SETUP YAML file for Grid-to-grid demo - February 2020
+# SETUP YAML file for Grid-to-grid demo
 
 EVA:
   work_radius: 0.6    # Eva's workspace radius [m] - DO NOT CHANGE THIS PARAMETER
@@ -23,51 +23,51 @@ EVA:
     - 0
 
 grids:
-  names:          # DO NOT CHANGE THESE PARAMETERS
+  names:          # internal names - DO NOT CHANGE
     - 'A'
     - 'B'
-  names_verbose:  # object names - USER DEFINED
+  names_verbose:  # object names, customizable - USER DEFINED
     A: 'Origin'
     B: 'Target'
-  row:            # grid rows, [#] - USER DEFINED
+  row:            # number of grid rows, [#] - USER DEFINED
     A: 0
     B: 0
-  col:            # grid cols, [#] - USER DEFINED
+  col:            # number of grid columns, [#] - USER DEFINED
     A: 0
     B: 0
-  row_pitch:      # rows pitch [mm] - USER DEFINED
+  row_pitch:      # distance between adjacent rows [mm] - USER DEFINED
     A: 0
     B: 0
-  col_pitch:      # cols pitch [mm] - USER DEFINED
+  col_pitch:      # distance between adjacent columns [mm] - USER DEFINED
     A: 0
     B: 0
-  x0:             # grid angle, x [mm] - USER DEFINED
+  x0:             # grid corner, referred to Eva frame's origin - x coordinate [mm] - USER DEFINED
     A: 0
     B: 0
-  y0:             # grid angle, y [mm] - USER DEFINED
+  y0:             # grid corner, referred to Eva frame's origin - y coordinate [mm] - USER DEFINED
     A: 0
     B: 0
-  angle:          # grid orientation, [deg] - USER DEFINED
+  angle:          # grid orientation, referred to Eva frame's origin [deg] - USER DEFINED
     A: 0
     B: 0
   angle_pickup:   # additional pick-up angle, [deg] - USER DEFINED
     A: 0
     B: 0
-  surface:        # surf height of grid, [mm] - USER DEFINED
+  surface:        # surf height of grid, referred to Eva frame's xy plane, [mm] - USER DEFINED
     A: 0
     B: 0
-  object:         # object height, [mm] - USER DEFINED
+  object:         # object thickness, referred to Eva frame's z-axis, [mm] - USER DEFINED
     A: 0
     B: 0
   guess:
-    A:            # joints grid guess, pick-up [rad] - USER DEFINED
+    A:            # joints guess for origin grid [rad] - USER DEFINED
       - 0
       - 0
       - 0
       - 0
       - 0
       - 0
-    B:            # joints guess, drop-off [rad] - USER DEFINED
+    B:            # joints guess for target grid [rad] - USER DEFINED
       - 0
       - 0
       - 0

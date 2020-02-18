@@ -37,7 +37,7 @@ the pickup and the drop-off points (i.e. inspection, measuring, filling, etc.).
 __[evaUtilities.py](evaUtilities.py)__
 
 This file contains the auxiliary functions needed by the main __[main.py](main.py)__ script 
-(frame of reference handling, angle and quaternion conversion, forward and inverse kinematics, plotting). 
+(frame of reference handling, angle and quaternion conversion, forward and inverse kinematics, plotting, grid points creation). 
 You **should not** change this file.
 
 
@@ -105,7 +105,7 @@ built-in solver ```eva.calc_inverse_kinematics()```.
 
 ## Visualization tool: 
 The script contains a graphical simulator to visualise the computed grids. This mode can be turned on and off
-by setting the ```plot_on_off``` variable to ```True``` or ```False```, respectively.
+by setting the ```show_plot``` variable to ```True``` or ```False```, respectively.
 
 **NOTE: It is highly recommended to turn this function on when the use-case is in the prototyping phase, 
  in order to avoid damages due to incorrect user entries.**
